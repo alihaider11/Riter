@@ -78,8 +78,8 @@ function generateRandomDrawing() {
     // Randomize color, size, position, and animation duration
     const randomColor = config.colors[Math.floor(Math.random() * config.colors.length)];
     const randomSizeFactor = (Math.random() * (config.maxSize - config.minSize) + config.minSize) / 100;
-    const randomX = Math.random() * (window.innerWidth - (200 * randomSizeFactor));
-    const randomY = Math.random() * (window.innerHeight - (100 * randomSizeFactor));
+    const randomX = Math.random() * Math.max(0, window.innerWidth - (300 * randomSizeFactor));
+    const randomY = Math.random() * Math.max(0, window.innerHeight - (100 * randomSizeFactor));
     const randomDuration = Math.random() * (config.maxDuration - config.minDuration) + config.minDuration;
 
     // Apply styles and transformations
