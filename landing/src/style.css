@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Define custom colors for Tailwind using @theme */
+@theme {
+  --color-gray-850: #1a202c; /* A shade darker than gray-800 for the instructions section */
+  --color-amber-400: #fbbf24;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-green-400: #58f878;
+  --color-green-600: #39bf54;
+  --color-blue-400: #2770f0;
+  --color-red-400: #ff5657;
+  --color-yellow-400: #ffff01;
+  --color-pink-500: #db6ebd;
+  /* Add more custom colors here if needed */
+}
+
+/* Custom styles for the landing page */
+body {
+  @apply bg-gray-900 text-gray-100;
+  overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
+}
+
+/* Style for keyboard shortcuts in instructions */
+.kbd {
+  @apply font-mono text-xs px-1.5 py-0.5 bg-gray-700 border border-gray-600 rounded-md;
+}
+
+/* Ensure SVG paths are visible and styled */
+svg.pen-stroke {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Animation keyframes for drawing effect */
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Style for animated paths */
+.animated-path {
+  stroke-dasharray: var(--path-length);
+  stroke-dashoffset: var(--path-length);
+  animation: drawPath linear forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    #hero h1 {
+        @apply text-3xl;
+    }
+    #hero p {
+        @apply text-lg;
+    }
+    #hero h2 {
+        @apply text-xl;
+    }
+}

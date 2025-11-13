@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Link to the sitemap
+Sitemap: https://your-landing-page-url.com/sitemap.xml

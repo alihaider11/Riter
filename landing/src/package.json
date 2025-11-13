@@ -1,0 +1,21 @@
+{
+  "name": "riterlanding",
+  "version": "1.0.0",
+  "description": "the landing page for riter",
+  "keywords": [
+    "riter",
+    "landingpage"
+  ],
+  "license": "ISC",
+  "author": "Mohammad Karimi, Mazdak Parnian",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.2.5",
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

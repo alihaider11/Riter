@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Title and Description -->
+    <title>Riter: Draw Directly on Your Screen</title>
+    <meta name="description"
+        content="Riter is a modern, open-source screen drawing tool for Windows. Annotate, highlight, and draw directly on your screen for presentations, tutorials, and online calls.">
+    <meta name="keywords"
+        content="screen drawing tool, WPF annotation software, free screen marker, open-source whiteboard, Windows drawing app, fading ink">
+    <meta name="author" content="Mohammad Karimi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Riter: Draw Directly on Your Screen">
+    <meta property="og:description" content="A modern, open-source screen drawing tool for Windows.">
+    <meta property="og:url" content="https://your-landing-page-url.com"> <!-- Replace with actual URL -->
+    <meta property="og:site_name" content="Riter">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Riter: Draw Directly on Your Screen">
+    <meta name="twitter:description" content="A modern, open-source screen drawing tool for Windows.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icon.ico"> <!-- Add a favicon later -->
+
+    <!-- Tailwind CSS v4 CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com/4.0.0-alpha.2"></script> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/output.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+    <!-- Animated Background Container -->
+    <div id="background-container" class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <!-- SVGs will be dynamically added here by script.js -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 min-h-screen flex flex-col">
+        <!-- Header/Navigation -->
+        <header class="p-4 sm:p-6">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <!-- Logo -->
+                    <img src="assets/RiterLogo.png" alt="Riter Logo" class="w-8 h-8">
+                    <span class="text-xl font-bold">Riter</span>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#features" class="hover:text-amber-400 transition-colors duration-300">Features</a>
+                        </li>
+                        <li><a href="#instructions"
+                                class="hover:text-amber-400 transition-colors duration-300">Instructions</a></li>
+                        <li><a href="https://github.com/mohammadKarimi/Riter" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-amber-400 transition-colors duration-300">GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="flex-grow flex flex-col justify-center items-center text-center px-4 py-16 sm:py-24">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Draw Directly on Your Screen</h1>
+                <p class="text-xl sm:text-2xl text-gray-300 mb-6">A modern, open-source tool for presentations,
+                    tutorials, and online calls.</p>
+                <h2 class="text-2xl sm:text-3xl italic mb-8 text-yellow-400">Riter isn't a pen, it's your mind.</h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://github.com/mohammadKarimi/Riter/releases" target="_blank" rel="noopener noreferrer"
+                        class="px-8 py-3 bg-green-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-300 transform hover:scale-105">
+                        Try Now
+                    </a>
+                    <a href="https://github.com/mohammadKarimi/Riter" target="_blank" rel="noopener noreferrer"
+                        class="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-300">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-bold text-center mb-12">Powerful Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-pink-500 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Fading Ink</h3>
+                        <p class="text-gray-400">Draw with ink that automatically disappears, perfect for temporary
+                            highlights or instructions.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-pink-500 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Global Hotkeys</h3>
+                        <p class="text-gray-400">Access tools quickly with keyboard shortcuts, even when Riter is not in
+                            focus.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-pink-500 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Direct Screen Drawing</h3>
+                        <p class="text-gray-400">Draw directly on top of any application window, making it ideal for
+                            live demonstrations.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-pink-500 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Multiple Shapes</h3>
+                        <p class="text-gray-400">Easily draw lines, arrows, rectangles, circles, and more using keyboard
+                            shortcuts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions Section -->
+        <section id="instructions" class="py-16 px-4 bg-gray-850">
+            <!-- bg-gray-850 is a custom color, defined in style.css -->
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-8">Get Started</h2>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Installation & Usage</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-300">
+                        <li>Download the latest release from the <a
+                                href="https://github.com/mohammadKarimi/Riter/releases" target="_blank"
+                                rel="noopener noreferrer" class="text-yellow-400 hover:underline">GitHub Releases
+                                page</a>.</li>
+                        <li>Extract the downloaded file.</li>
+                        <li>Run the executable file (requires Windows and .NET 8 runtime).</li>
+                        <li>Use global hotkeys like <kbd class="kbd">D</kbd> (Draw), <kbd class="kbd">E</kbd> (Erase),
+                            <kbd class="kbd">Ctrl+F</kbd> (Fading Ink), and <kbd class="kbd">Ctrl+T</kbd> (Clear) to
+                            start drawing!</li>
+                    </ol>
+                    <p class="mt-4 text-gray-400">
+                        For more details, visit the <a href="https://github.com/mohammadKarimi/Riter#readme"
+                            target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:underline">full
+                            README</a> on GitHub.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Enhance Your Screen Sharing?</h2>
+                <p class="text-xl text-gray-300 mb-8">Join the community and start drawing directly on your screen
+                    today.</p>
+                <a href="https://github.com/mohammadKarimi/Riter/releases" target="_blank" rel="noopener noreferrer"
+                    class="inline-block px-8 py-4 bg-green-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-300 transform hover:scale-105">
+                    Download Riter Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 border-t border-gray-800">
+            <div class="container mx-auto max-w-6xl text-center text-gray-500">
+                <p>© <span id="currentYear"></span> Riter. Licensed under the <a
+                        href="https://github.com/mohammadKarimi/Riter/blob/main/LICENSE" target="_blank"
+                        rel="noopener noreferrer" class="text-amber-400 hover:underline">MIT License</a>.</p>
+                <p class="mt-2">Open Source on <a href="https://github.com/mohammadKarimi/Riter" target="_blank"
+                        rel="noopener noreferrer" class="text-amber-400 hover:underline">GitHub</a>.</p>
+                <p>This page was designed and developed by <a href="https://mazdakparnian.com" target="_blank"
+                        rel="noopener noreferrer" class="text-amber-400 hover:underline">Mazdak</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+        // Set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
